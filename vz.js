@@ -19,11 +19,11 @@ const {
     arrayToHashes, iterate, loadHashes, loadHashesAsArray, readHash, getDeep, setDeep
 } = require('./lib/hash')
 
-const DeepIterate = require('./lib/deepIterate')
+const Select = require('./lib/select')
 
 module.exports = {
     deepFor, getDiff, sleep,
     handleFilesRecursively, renameRecursively,
     arrayToHashes, iterate, loadHashes, loadHashesAsArray, readHash, getDeep, setDeep,
-    DeepIterate
+    Select
 }
