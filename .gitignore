@@ -1,0 +1,6 @@
+node_modules
+*.js.map
+private/
+.DS_Store
+package-lock.json
+.vscode/launch.json
