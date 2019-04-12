@@ -16,13 +16,13 @@ const {
 } = require('./lib/files')
 
 const {
-    arrayToHashes, iterate, loadHashes, loadHashesAsArray, readHash, getDeep, setDeep
+    arrayToHashes, iterate, loadHashes, loadHashesAsArray, matchesFilter, readHash, getDeep, setDeep
 } = require('./lib/hash')
 
 const Select = require('./lib/select')
 
 module.exports = {
-    deepFor, getDiff, sleep,
+    deepFor, getDiff, sleep, matchesFilter,
     handleFilesRecursively, renameRecursively,
     arrayToHashes, iterate, loadHashes, loadHashesAsArray, readHash, getDeep, setDeep,
     Select
