@@ -16,14 +16,16 @@ const {
 } = require('./lib/files')
 
 const {
-    arrayToHashes, iterate, loadHashes, loadHashesAsArray, matchesFilter, readHash, getDeep, setDeep
+    arrayToHashes, iterate, loadHashes, loadHashesAsArray, matchesFilter, readHash, getDeep, renameKeys, setDeep
 } = require('./lib/hash')
 
 const Select = require('./lib/select')
 
+const AsyncIterable = require('./lib/asyncIterable')
+
 module.exports = {
     deepFor, getDiff, sleep, matchesFilter,
-    handleFilesRecursively, renameRecursively,
+    handleFilesRecursively, renameKeys, renameRecursively,
     arrayToHashes, iterate, loadHashes, loadHashesAsArray, readHash, getDeep, setDeep,
-    Select
+    Select, AsyncIterable
 }
