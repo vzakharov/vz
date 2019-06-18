@@ -8,7 +8,7 @@ const {
 } = _
 
 const {
-    deepFor, getDiff, sleep
+    deepFor, getDiff, sleep, lastDefined
 } = require('./lib/basic')
 
 const {
@@ -24,8 +24,8 @@ const Select = require('./lib/select')
 const AsyncIterable = require('./lib/asyncIterable')
 
 module.exports = {
-    deepFor, getDiff, sleep, matchesFilter,
+    deepFor, getDiff, sleep, matchesFilter, lastDefined,
     handleFilesRecursively, renameKeys, renameRecursively,
-    arrayToHashes, iterate, loadHashes, loadHashesAsArray, readHash, getDeep, setDeep,
+    arrayToHashes, iterate, loadHashes, loadHashesAsArray, readHash, getDeep, setDeep, 
     Select, AsyncIterable
 }
