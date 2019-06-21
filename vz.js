@@ -23,9 +23,15 @@ const Select = require('./lib/select')
 
 const AsyncIterable = require('./lib/asyncIterable')
 
+const setGetters = (object, getters) => {
+    for (let key in getters) {
+        Object.defineProperty(object, key, {get: () => getters[key]})
+    }
+}
+
 module.exports = {
     deepFor, getDiff, sleep, matchesFilter, lastDefined,
     handleFilesRecursively, renameKeys, renameRecursively,
     arrayToHashes, iterate, loadHashes, loadHashesAsArray, readHash, getDeep, setDeep, 
-    Select, AsyncIterable
+    Select, AsyncIterable, setGetters
 }
